@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/courses",
+      "destination": "/courses.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
