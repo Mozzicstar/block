@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - BLOCKEDLEARNING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Navigation -->
+        <header class="header">
+            <div class="nav-header">
+                <h1 class="logo">🎓 BLOCKEDLEARNING</h1>
+                <div class="user-nav">
+                    <span id="current-user">Loading...</span>
+                    <button id="logout-btn" class="secondary-btn">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Course Upload Section -->
+            <section class="upload-section">
+                <h2>📤 Upload New Course</h2>
+                <div class="upload-form">
+                    <div class="form-group">
+                        <label for="course-title">Course Title:</label>
+                        <input 
+                            type="text" 
+                            id="course-title" 
+                            placeholder="Enter course title (e.g., 'Blockchain Basics')"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="course-file">Course File:</label>
+                        <input 
+                            type="file" 
+                            id="course-file" 
+                            accept=".pdf,.mp4,.zip,.txt,.docx"
+                            required
+                        >
+                        <small>Supported: PDF, MP4, ZIP, TXT, DOCX</small>
+                    </div>
+                    
+                    <button id="upload-btn" class="primary-btn">
+                        🚀 Upload to Blockchain
+                    </button>
+                    
+                    <!-- Upload Status -->
+                    <div id="upload-status" class="upload-status"></div>
+                </div>
+            </section>
+
+            <!-- Course List Section -->
+            <section class="courses-section">
+                <h2>📚 Available Courses</h2>
+                <div id="courses-container" class="courses-container">
+                    <!-- Courses will be dynamically loaded here -->
+                    <div class="loading-message">
+                        Loading courses...
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 BLOCKEDLEARNING - Decentralized Learning Platform</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="lighthouse.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

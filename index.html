@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOCKEDLEARNING - Decentralized Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="logo">🎓 BLOCKEDLEARNING</h1>
+            <p class="tagline">Learn on the Blockchain, Own Your Knowledge</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h2>Welcome to the Future of Learning</h2>
+                <p>Upload, share, and access courses stored permanently on the blockchain using Filecoin and IPFS.</p>
+                
+                <!-- Connection Status Display -->
+                <div id="connection-status" class="connection-status">
+                    <p>Connect your MetaMask wallet to get started</p>
+                </div>
+            </section>
+
+            <!-- Authentication Section -->
+            <section class="auth-section">
+                <!-- MetaMask Connect Button -->
+                <button id="connect-wallet" class="connect-btn">
+                    🦊 Connect MetaMask Wallet
+                </button>
+                
+                <!-- User Info (hidden initially) -->
+                <div id="user-info" class="user-info" style="display: none;">
+                    <p>Connected as: <span id="wallet-address"></span></p>
+                    <button id="go-to-courses" class="primary-btn">
+                        📚 Access Courses
+                    </button>
+                    <button id="disconnect-wallet" class="secondary-btn">
+                        Disconnect
+                    </button>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <h3>Platform Features</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4>🔐 Secure Authentication</h4>
+                        <p>Login with your MetaMask wallet - no passwords needed</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📁 Permanent Storage</h4>
+                        <p>Course files stored on Filecoin via Lighthouse SDK</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🌐 Decentralized Access</h4>
+                        <p>Access your courses from anywhere via IPFS</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 BLOCKEDLEARNING - Built with Web3 Technologies</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
