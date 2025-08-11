@@ -4,8 +4,18 @@
 // Import Lighthouse SDK
 import lighthouse from "@lighthouse-web3/sdk"
 
-// Your Lighthouse API key (provided by user)
-const LIGHTHOUSE_API_KEY = "0bf84ba6.33150e5a967542729efc654c351493f5"
+import dotenv from "dotenv"
+
+// Load environment variables
+dotenv.config()
+
+// Get Lighthouse API key from environment
+const LIGHTHOUSE_API_KEY = process.env.LIGHTHOUSE_API_KEY
+
+if (!LIGHTHOUSE_API_KEY) {
+  throw new Error("LIGHTHOUSE_API_KEY is required in environment variables")
+}
+
 
 console.log("🏮 Lighthouse SDK integration loaded")
 
